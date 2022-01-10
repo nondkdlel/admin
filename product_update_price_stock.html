@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="update" class="layout">
+                <aside>
+                    <div class="head">
+                        <img src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li><a href="product_category.html">상품 카테고리</a></li>
+                        <li class="on"><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>상품 등록_<span>Product Registration</span></h1>
+                    </div> <!-- end tit -->
+                    <ul class="tab-area">
+                        <li><a href="product_update_category.html">카테고리</a></li>
+                        <li><a href="product_update_default_info.html">기본정보</a></li>
+                        <li><a href="product_update_option_info.html">옵션정보</a></li>
+                        <li class="on"><a href="product_update_price_stock.html">가격 및 재고</a></li>
+                        <li><a href="product_update_shipping_fee.html">배송비</a></li>
+                        <li><a href="product_update_img_upload.html">상품 이미지</a></li>
+                    </ul> <!-- end tab-area -->
+                    <div class="admin-setting">
+                        <div class="price-save pt-info">
+                            <div class="cm-tit">
+                                <p>가격 및 재고</p>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <table class="t-common">
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <tr>
+                                        <th>시중가격</th>
+                                        <td>
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>원</span>
+                                            </div> <!-- end inp-box -->
+                                            <p class="brief-info">시중에 판매되는 가격 (판매가 보다 크지 않으면 시중가를 표시하지 않아도 됨)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>공급가격</th>
+                                        <td>
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>원</span>
+                                            </div> <!-- end inp-box -->
+                                            <p class="brief-info">사입처에서 공급받은 가격</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>판매가격</th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">판매</option>
+                                                <option value="">렌탈</option>
+                                            </select>
+                                            <input class="width-10" type="text" name="" id="" placeholder="ex ) 월">
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>원</span>
+                                            </div> <!-- end inp-box -->
+                                            <p class="brief-info">사입처에서 공급받은 가격</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제휴카드 할인</th>
+                                        <td>
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>원</span>
+                                            </div> <!-- end inp-box -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>포인트</th>
+                                        <td>
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>P</span>
+                                            </div> <!-- end inp-box -->
+                                            <div class="inp-box">
+                                                <input type="text" name="" id="">
+                                                <span>%</span>
+                                            </div> <!-- end inp-box -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>가격 대체문구</th>
+                                        <td>
+                                            <input type="text" name="" id="" class="width-30">
+                                            <p class="brief-info">가격대신 보여질 문구를 노출할 때 입력, 주문불가</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>수량</th>
+                                        <td>
+                                            <div class="chk-fr">
+                                                <input type="radio" name="unit_whether" id="unlimited"><label
+                                                    for="unlimited">무제한</label>
+                                                <input type="radio" name="unit_whether" id="limited"><label
+                                                    for="limited">한정</label>
+                                                <div class="define-fr">
+                                                    <div class="sp-form">
+                                                        <input type="text" name="" id="" placeholder="0">
+                                                        <span>개 ,</span>
+                                                    </div>
+                                                    <div class="sp-form">
+                                                        <p class="thead">재고 통보수량</p>
+                                                        <input type="text" name="" id="" placeholder="999">
+                                                        <span>개</span>
+                                                    </div>
+                                                </div> <!-- end define-fr -->
+                                            </div> <!-- end chk-fr -->
+                                            <p class="brief-info">상품의 재고가 통보수량보다 작을 때 상품 재고관리에 표시됩니다.</p>
+                                            <p class="brief-info">옵션이 있는 상품은 개별 옵션의 통보수량이 적용됩니다. 설정이 무제한이면 재고관리에 표시되지
+                                                않습니다.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>주문한도</th>
+                                        <td>
+                                            <div class="define-fr">
+                                                <div class="sp-form">
+                                                    <p class="thead">최소</p>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="sp-form">
+                                                    <p class="thead">최대</p>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <p class="brief-info">미입력시 무제한으로 처리됩니다.</p>
+                                            </div> <!-- end define-fr -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>판매기간 설정</th>
+                                        <td>
+                                            <div class="define-fr">
+                                                <div class="sp-form">
+                                                    <p class="thead">시작일</p>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="sp-form">
+                                                    <p class="thead">종료일</p>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <input class="reset-btn" type="button" value="기간 초기화">
+                                            </div> <!-- end define-fr -->
+                                            
+                                            <p class="brief-info">설정된 기간 동안만 판매 가능하며, 설정된 종료일 이후에는 판매되지 않습니다.</p>
+                                            <p class="brief-info">일시 판매중지 처리하실 경우, 종료일을 현재날짜 이전의 과거 날짜를 넣어주시면 됩니다.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!-- end common-fr -->
+                            <div class="finished">
+                                <input type="button" value="저장">
+                            </div> <!-- end finished -->
+                        </div> <!-- end price-save -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- update -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

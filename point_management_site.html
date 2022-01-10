@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="search-tab" class="layout">
+                <aside>
+                    <div class="head">
+                        <img src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li><a href="product_category.html">상품 카테고리</a></li>
+                        <li><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li class="on"><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>포인트 전환 관리_<span>Point Conversion Management</span></h1>
+                    </div> <!-- end tit -->
+                    <div class="tab-menu">
+                        <ul>
+                            <li><a href="point_management_list.html">포인트 전환 내역</a></li>
+                            <li class="on"><a href="point_management_site.html">포인트 전환 사이트 관리</a></li>
+                            <li><a href="coin_price_management.html">코인 시세 관리</a></li>
+                        </ul>
+                    </div> <!-- end tab-menu -->
+                    <div class="admin-setting">
+                        <div class="site-update pt-info">
+                            <div class="cm-tit">
+                                <p>포인트 전환 사이트 등록</p>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <ul>
+                                    <li class="thead">사이트명</li>
+                                    <li><input type="text" name="" id=""></li>
+                                </ul>
+                                <ul>
+                                    <li class="thead">기준가</li>
+                                    <li><input type="text" name="" id=""></li>
+                                </ul>
+                                <ul>
+                                    <li class="thead">API 연동 URL</li>
+                                    <li><input type="text" name="" id=""></li>
+                                </ul>
+                            </div> <!-- end common-fr -->
+                            <div class="finished">
+                                <input type="button" value="등록">
+                            </div> <!-- end finished -->
+                        </div> <!-- end site-update -->
+                        <div class="search-results pt-info width-auto">
+                            <div class="head">
+                                <h1>검색결과</h1>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <table>
+                                    <colgroup>
+                                        <col width="18%">
+                                        <col width="14%">
+                                        <col width="12%">
+                                        <col width="27%">
+                                        <col width="14%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>사이트명</th>
+                                            <th>사이트코드</th>
+                                            <th>기준가</th>
+                                            <th>API 연동 URL</th>
+                                            <th>등록일</th>
+                                            <th>관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>아질로원 에듀</td>
+                                            <td>2d68d1d4b9</td>
+                                            <td>100</td>
+                                            <td>http://edu.azilowon.io/plugin/api/trans_coins_json.php </td>
+                                            <td>
+                                                <ul>
+                                                    <li>2020-05-11</li>
+                                                    <li>10:00:01</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                                <input class="use-coin" type="button" value="사용코인">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>아질로원 에듀</td>
+                                            <td>2d68d1d4b9</td>
+                                            <td>100</td>
+                                            <td>http://edu.azilowon.io/plugin/api/trans_coins_json.php </td>
+                                            <td>
+                                                <ul>
+                                                    <li>2020-05-11</li>
+                                                    <li>10:00:01</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                                <input class="use-coin" type="button" value="사용코인">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>아질로원 에듀</td>
+                                            <td>2d68d1d4b9</td>
+                                            <td>100</td>
+                                            <td>http://edu.azilowon.io/plugin/api/trans_coins_json.php </td>
+                                            <td>
+                                                <ul>
+                                                    <li>2020-05-11</li>
+                                                    <li>10:00:01</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                                <input class="use-coin" type="button" value="사용코인">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>아질로원 에듀</td>
+                                            <td>2d68d1d4b9</td>
+                                            <td>100</td>
+                                            <td>http://edu.azilowon.io/plugin/api/trans_coins_json.php </td>
+                                            <td>
+                                                <ul>
+                                                    <li>2020-05-11</li>
+                                                    <li>10:00:01</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                                <input class="use-coin" type="button" value="사용코인">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end cm-inner -->
+                        </div> <!-- end coin-list -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- search-tab -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="transfer" class="layout">
+                <aside>
+                    <div class="head">
+                        <img src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li class="on"><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li><a href="product_category.html">상품 카테고리</a></li>
+                        <li><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>일괄전송 및 출금제한_<span>Batch transfer and withdrawal restrictions</span></h1>
+                    </div> <!-- end tit -->
+                    <div class="admin-setting">
+                        <div class="batch-tr pt-info">
+                            <div class="cm-tit">
+                                <p>일괄전송</p>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <ul>
+                                    <li class="thead">대표지갑 관리자</li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">-- 관리자를 선택해주세요. --</option>
+                                            <option value="">admin1</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="thead">이벤트 목록</li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">-- 이벤트를 선택해주세요. --</option>
+                                            <option value="">event1</option>
+                                            <option value="">event2</option>
+                                            <option value="">event3</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="download">
+                                    <a href="#">엑셀 양식 다운로드</a>
+                                </div>
+                                <ul>
+                                    <li class="thead">파일 업로드</li>
+                                    <li><input type="file" name="" id=""></li>
+                                </ul>
+                                <div class="btn-group">
+                                    <input type="button" value="파일 올리기">
+                                    <input type="button" value="초기화">
+                                </div> <!-- end btn-group -->
+                            </div> <!-- end common-fr -->
+                            <div class="finished">
+                                <input type="button" value="일괄전송">
+                            </div> <!-- end finished -->
+                        </div> <!-- end batch-tr -->
+                        <div class="wd-restrict pt-info">
+                            <div class="cm-tit">
+                                <p>출금제한</p>
+                            </div> <!-- end cm-tit -->
+                        <div class="common-fr cm-inner">
+                            <div class="download">
+                                <a href="#">엑셀 양식 다운로드</a>
+                            </div>
+                            <ul>
+                                <li class="thead">파일 업로드</li>
+                                <li><input type="file" name="" id=""></li>
+                            </ul>
+                            <div class="btn-group">
+                                <input type="button" value="파일 올리기">
+                                <input type="button" value="초기화">
+                            </div> <!-- end btn-group -->
+                        </div> <!-- end common-fr -->
+                        <div class="finished">
+                            <input type="button" value="일괄 출금 제한">
+                        </div> <!-- end finished -->
+                    </div> <!-- end wd-restrict -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- layout -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

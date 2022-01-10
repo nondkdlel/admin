@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        $(function(){
+            $("#product .p-cate .cate-list .cm-edit .edit-btn input:first-child").click(function(){
+                $("#popup").show();
+            });
+            $("#popup .head .hide-btn").click(function(){
+                $("#popup").hide();
+            });
+            $("#popup .btn-group .cancel-btn").click(function(){
+                $("#popup").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="popup" class="cate-pop">
+                <div class="head">
+                    <h1>카테고리 수정</h1>
+                    <button class="hide-btn"><img src="img/hide_btn.png" alt=""></button>
+                </div> <!-- end head -->
+                <div class="cm-form">
+                    <table>
+                        <colgroup>
+                        <col width="22%">
+                        <col width="78%">
+                        </colgroup>
+                        <tr>
+                            <th>소속 카테고리</th>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th>카테고리명</th>
+                            <td>
+                                <input type="text" name="" id="">
+                                <div class="chk-btn">
+                                    <input type="checkbox" name="hide_btn" id="hide_btn"><label for="hide_btn">카테고리 숨김</label>
+                                </div> <!-- end chk-btn -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>코인 결제 비율</th>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th>카테고리 이미지</th>
+                            <td><input type="file" name="" id=""></td>
+                        </tr>
+                    </table>
+                </div> <!-- end cm-form -->
+                <div class="btn-group">
+                    <input type="button" value="취소" class="cancel-btn">
+                    <input type="button" value="확인" class="confirm-btn">
+                </div> <!-- end btn-group -->
+            </div> <!-- end popup -->
+            <div id="product" class="layout">
+                <aside>
+                    <div class="head">
+                        <img 
+                        src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li class="on"><a href="product_category.html">상품 카테고리</a></li>
+                        <li><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>상품 카테고리_<span>Product Category</span></h1>
+                    </div> <!-- end tit -->
+                    <div class="admin-setting">
+                        <div class="cate-setting pt-info">
+                            <div class="cm-tit">
+                                <p>상품 카테고리 관리</p>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <ul>
+                                    <li class="thead">카테고리 구분</li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">-- 1차 분류 선택 --</option>
+                                            <option value="">패션의류</option>
+                                            <option value="">패션잡화</option>
+                                            <option value="">화장품 / 미용</option>
+                                            <option value="">디지털 / 가전</option>
+                                            <option value="">가구 / 인테리어</option>
+                                            <option value="">출산 / 육아</option>
+                                            <option value="">식품</option>
+                                            <option value="">스포츠 / 레저</option>
+                                            <option value="">생활 / 건강</option>
+                                            <option value="">여행 / 문화</option>
+                                            <option value="">가상화폐</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">-- 2차 분류 선택 --</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">-- 3차 분류 선택 --</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">-- 4차 분류 선택 --</option>
+                                        </select>
+                                        
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="thead">카테고리명</li>
+                                    <li><input type="text" class="width-100"></li>
+                                </ul>
+                                <ul>
+                                    <li class="thead">카테고리 이미지</li>
+                                    <li><input type="file" name="" id=""></li>
+                                </ul>
+                            </div> <!-- end common-fr -->
+                            <div class="finished">
+                                <input type="button" value="등록">
+                            </div> <!-- end finished -->
+                        </div> <!-- end cate-setting -->
+                        <div class="p-cate pt-info">
+                            <div class="cm-tit">
+                                <p>카테고리 리스트</p>
+                            </div> <!-- end cm-tit -->
+                        <div class="cate-list cm-inner">
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">001</li>
+                                    <li class="cate-nm">패션의류</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">002</li>
+                                    <li class="cate-nm">패션잡화</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">003</li>
+                                    <li class="cate-nm">화장품 / 미용</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">004</li>
+                                    <li class="cate-nm">디지털 / 가전</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">005</li>
+                                    <li class="cate-nm">가구 / 인테리어</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">006</li>
+                                    <li class="cate-nm">출산 / 육아</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">007</li>
+                                    <li class="cate-nm">식품</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">008</li>
+                                    <li class="cate-nm">스포츠 / 레저</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">009</li>
+                                    <li class="cate-nm">생활 / 건강</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">010</li>
+                                    <li class="cate-nm">여행 / 문화</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                            <div class="cm-edit">
+                                <div class="type">1차 분류</div>
+                                <ul>
+                                    <li class="order">011</li>
+                                    <li class="cate-nm">가상화폐</li>
+                                    <li class="down-num">(1)</li>
+                                </ul>
+                                <div class="edit-btn">
+                                    <input type="button" value="수정">
+                                    <input type="button" value="삭제">
+                                </div> <!-- end edit-btn -->
+                            </div> <!-- end cm-edit-->
+                        </div> <!-- end cate-list -->
+                    </div> <!-- end p-cate -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- event-register -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

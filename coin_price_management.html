@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            $("#search-tab .search-results .head input").click(function () {
+                $("#popup").show();
+            });
+            $("#popup .head .hide-btn").click(function () {
+                $("#popup").hide();
+            });
+            $("#popup .btn-group .cancel-btn").click(function () {
+                $("#popup").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="popup" class="coin-save-pop">
+            <div class="head">
+                <h1>코인 등록</h1>
+                <button class="hide-btn"><img src="img/hide_btn.png" alt=""></button>
+            </div> <!-- end head -->
+            <div class="cm-form">
+                <table>
+                    <colgroup>
+                        <col width="22%">
+                        <col width="78%">
+                    </colgroup>
+                    <tr>
+                        <th>코인심볼</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">ETH</option>
+                                <option value="">BTC</option>
+                                <option value="">BPC</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>코인시세 (KRW 기준)</th>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>마진율 % (API 연동시)</th>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>실시간 시세 API 연동 URL</th>
+                        <td><input type="file" name="" id="" placeholder="실시간 시세 연동의 경우 24시 기준으로 시세가 업데이트 됩니다."></td>
+                    </tr>
+                    <tr>
+                        <th>실시간 시세 연동 여부</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">연동</option>
+                                <option value="">미연동</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- end cm-form -->
+            <div class="btn-group">
+                <input type="button" value="취소" class="cancel-btn">
+                <input type="button" value="확인" class="confirm-btn">
+            </div> <!-- end btn-group -->
+        </div> <!-- end popup -->
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="search-tab" class="layout">
+                <aside>
+                    <div class="head">
+                        <img src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li><a href="product_category.html">상품 카테고리</a></li>
+                        <li><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li class="on"><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>포인트 전환 관리_<span>Point Conversion Management</span></h1>
+                    </div> <!-- end tit -->
+                    <div class="tab-menu">
+                        <ul>
+                            <li><a href="point_management_list.html">포인트 전환 내역</a></li>
+                            <li><a href="point_management_site.html">포인트 전환 사이트 관리</a></li>
+                            <li class="on"><a href="coin_price_management.html">코인 시세 관리</a></li>
+                        </ul>
+                    </div> <!-- end tab-menu -->
+                    <div class="admin-setting">
+                        <div class="search-results pt-info">
+                            <div class="head">
+                                <h1>코인 관리</h1>
+                                <input type="button" value="코인 등록">
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <table>
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="10%">
+                                        <col width="8%">
+                                        <col width="54%">
+                                        <col width="8%">
+                                        <col width="10%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>코인 심볼명</th>
+                                            <th>코인 시세</th>
+                                            <th>마진율</th>
+                                            <th>API 연동 URL</th>
+                                            <th>연동상태</th>
+                                            <th>관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ETH</td>
+                                            <td>562,683 KRW</td>
+                                            <td>10.00%</td>
+                                            <td>https://pubexcoin.bitpos.io:8443/excoin/coin/coin/rate/coinvalue?bookmark_
+                                                type=0&limit=ALL&coin_type=ETH&order_by=reg_date&desc=ASC&key_coin_
+                                                type=KRW</td>
+                                            <td>Y</td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ETH</td>
+                                            <td>562,683 KRW</td>
+                                            <td>10.00%</td>
+                                            <td>https://pubexcoin.bitpos.io:8443/excoin/coin/coin/rate/coinvalue?bookmark_
+                                                type=0&limit=ALL&coin_type=ETH&order_by=reg_date&desc=ASC&key_coin_
+                                                type=KRW</td>
+                                            <td>Y</td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ETH</td>
+                                            <td>562,683 KRW</td>
+                                            <td>10.00%</td>
+                                            <td>https://pubexcoin.bitpos.io:8443/excoin/coin/coin/rate/coinvalue?bookmark_
+                                                type=0&limit=ALL&coin_type=ETH&order_by=reg_date&desc=ASC&key_coin_
+                                                type=KRW</td>
+                                            <td>Y</td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ETH</td>
+                                            <td>562,683 KRW</td>
+                                            <td>10.00%</td>
+                                            <td>https://pubexcoin.bitpos.io:8443/excoin/coin/coin/rate/coinvalue?bookmark_
+                                                type=0&limit=ALL&coin_type=ETH&order_by=reg_date&desc=ASC&key_coin_
+                                                type=KRW</td>
+                                            <td>Y</td>
+                                            <td>
+                                                <input class="edit-btn" type="button" value="수정">
+                                                <input class="delete-btn" type="button" value="삭제">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end cm-inner -->
+                        </div> <!-- end coin-list -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- search-tab -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

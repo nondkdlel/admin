@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: 관리자모드 ::</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+                <a class="link" href="https://bitpos.co.kr/" target="_blank">Bitpos 월렛 접속</a>
+            </div> <!-- end container -->
+        </header>
+        <div class="ct-wrap">
+            <div id="update" class="layout">
+                <aside>
+                    <div class="head">
+                        <img src="img/user_icon.png" alt="">
+                        <h1>관리자 모드</h1>
+                    </div> <!-- end head -->
+                    <ul class="main-menu">
+                        <li><a href="mem_info.html">회원정보</a></li>
+                        <li><a href="data_transfer.html">일괄전송 및 출금제한</a></li>
+                        <li><a href="event_code_registration.html">이벤트코드 등록</a></li>
+                        <li><a href="product_category.html">상품 카테고리</a></li>
+                        <li class="on"><a href="product_management.html">상품관리</a></li>
+                        <li><a href="order_management.html">주문관리</a></li>
+                        <li><a href="coin_information_registration.html">코인정보 등록</a></li>
+                        <li><a href="coin_transfer_result.html">코인전송 결과</a></li>
+                        <li><a href="mem_withdrawal_result.html">회원 출금제한 결과</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="point_management_list.html">포인트 전환 관리</a></li>
+                        <li><a href="point_charging_history.html">코인 전환 관리</a></li>
+                    </ul> <!-- end main-menu -->
+                </aside>
+                <div class="content">
+                    <div class="tit">
+                        <h1>상품 등록_<span>Product Registration</span></h1>
+                    </div> <!-- end tit -->
+                    <ul class="tab-area">
+                        <li><a href="product_update_category.html">카테고리</a></li>
+                        <li><a href="product_update_default_info.html">기본정보</a></li>
+                        <li><a href="product_update_option_info.html">옵션정보</a></li>
+                        <li><a href="product_update_price_stock.html">가격 및 재고</a></li>
+                        <li class="on"><a href="product_update_shipping_fee.html">배송비</a></li>
+                        <li><a href="product_update_img_upload.html">상품 이미지</a></li>
+                    </ul> <!-- end tab-area -->
+                    <div class="admin-setting">
+                        <div class="shipping-fee pt-info">
+                            <div class="cm-tit">
+                                <p>배송비</p>
+                            </div>
+                            <div class="common-fr cm-inner">
+                                <span class="noti">※ 참고사항 - 고객이 동일 판매자의 상품을 복수 구매하는 배송비는 한 번만 부과됩니다. ( 단, 배송비는 가장 큰 값을 산출하여 적용됩니다. )</span>
+                                <span class="noti">※ 조건부 무료배송 - 고객이 동일 판매자의 상품을 복수 구매하는 경우 가장 큰 값의 (조건배송비) 금액을 산출하여 최종 배송비가 자동 적용됩니다.</span>
+                                <span class="noti">※ 유료배송 - 고객이 동일 판매자의 상품을 복수 구매하는 경우 가장 큰 값의 (기본배송비) 금액을 산출하여 최종 배송비가 자동 적용됩니다..</span>
+                                <table style="margin-top: 25px;" class="t-common">
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <tr>
+                                        <th>배송정보</th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">무료배송</option>
+                                                <option value="">조건부 무료배송</option>
+                                                <option value="">유료배송</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송가능 지역</th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">전국</option>
+                                                <option value="">서울 / 경기도</option>
+                                                <option value="">서울특별시</option>
+                                                <option value="">경기도</option>
+                                                <option value="">경상도</option>
+                                                <option value="">강원도</option>
+                                                <option value="">전라도</option>
+                                                <option value="">충청도</option>
+                                                <option value="">제주도</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>추가설명</th>
+                                        <td>
+                                            <input type="text" name="" id="" placeholder="ex ) 제주 (도서지역 제외)">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div> <!-- end common-fr -->
+                            <div class="finished">
+                                <input type="button" value="저장">
+                            </div> <!-- end finished -->
+                        </div> <!-- end shipping-fee -->
+                    </div> <!-- end admin-setting -->
+                </div> <!-- end content -->
+            </div> <!-- update -->
+        </div> <!-- end ct-wrap -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2021 Jisigin Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

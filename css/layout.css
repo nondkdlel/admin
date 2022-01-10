@@ -1,0 +1,95 @@
+/* layout.css */
+
+header {
+    height: 80px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+header a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .logo {
+    left: 10px;
+}
+header .link {
+    right: 10px;
+    font-size: 15px;
+    color: #fff;
+    background: #13288e;
+    padding: 12px 22px;
+    border-radius: 8px;
+}
+
+/* aside */
+aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    margin-right: 80px;
+    background-image: linear-gradient(-30deg, #54aaea, #104df9);
+    padding: 20px;
+    border-radius: 16px;
+}
+aside .head {
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    text-align: center;
+    padding: 15px 10px;
+}
+aside .head img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+aside .head h1 {
+    font-size: 22px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+aside .main-menu {
+    padding: 30px 10px;
+}
+aside .main-menu li {
+    padding: 15px 10px;
+}
+
+aside .main-menu li a {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 40px;
+}
+aside .main-menu li.on {
+    background: #fff;
+    border-radius: 26px;
+}
+aside .main-menu li.on a {
+    color: #0946cc;
+    font-weight: 500;
+    position: relative;
+}
+aside .main-menu li.on a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px; height: 13px;
+    border: 4px solid #093fb7;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px; top: 50%;
+    transform: translateY(-50%);
+}
+/* footer */
+footer {
+    background: #fff;
+    padding: 20px 0;
+    text-align: right;
+    border-top: 1px solid #ccc;
+}
+footer .copyright {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
